@@ -1,18 +1,39 @@
-# React + Vite
+# React Memory Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a simple memory game built via [Vite for React](https://vite.dev/guide/#scaffolding-your-first-vite-project)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Shows how to put logic in a custom hook:  [useGameLogic](/src/useGameLogic.js#L3)
+- Shows the proper way to use [useCallBack](/src/useGameLogic.js#L20) to `cache` a function in a useEffect 
+- show simple component [state management](/src/useGameLogic.js#L4-L9) 
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Getting Started
+There is an assumption that you have node and some package manager already installed on you machine. If not, google how to run a nextJS app on my machine.
 
-Note: This will impact Vite dev & build performances.
+First, install the app if you have not run it before:
+```bash
+yarn install
+# or
+pnpm install
+# or
+bun install
+# or
+npm install
+```
 
-## Expanding the ESLint configuration
+Once the installation is complated, execute one of the commands below to start the development server:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+# or
+npm run dev
+```
+
+Open [http://localhost:5173/](http://localhost:5173/) with your browser to see the app.
